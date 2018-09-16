@@ -1,0 +1,27 @@
+Overall
+
+	Single Spaced
+	no spacing before / after paragraph
+	Font Size 10
+	Calibri
+
+Title
+
+Find:
+\<b\>(*)\</b\>
+
+Replace:
+\1
+
+	With font size 13 and bold
+
+
+Author
+
+Find:
+\<i\>(*)\</i\>
+
+Replace:
+\1
+
+	With italic and paragraph spacing after of 6pt
