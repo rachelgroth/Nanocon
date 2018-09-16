@@ -1,0 +1,1 @@
+Choose to use a wordpress site, since it will be easy to maintain and to transfer control from year to year with little to no learning curve.
