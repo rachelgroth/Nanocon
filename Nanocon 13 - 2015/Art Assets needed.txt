@@ -1,0 +1,35 @@
+Ashes is responsible for the Following:
+
+	Booklet Cover
+	Con Badges
+		Vendor
+			Bookstore (3)
+			Fantasy Trading Post (2)
+			Flashbax (3)
+			Acme (2)
+			Dragon's Den (2)
+		Speaker
+			Dennis Dyack
+			4 generic speaker badges
+		Staff Badges (15 of them)
+		Artist Badges (15 of them)
+		Guest (400, with numbers)
+		SIS (9)
+	Area Signs (2 each)
+		Front Desk
+		Speed Run Alley way
+		RPGA
+		Paint and Take
+		Artist's Corner
+		Bookstore
+		Society in Shadows
+		Console Games
+		Ticket Booth
+		Video Game Area
+		Concessions
+		Extra Life
+		Lost and Found
+	Gaming Area (3 of each)
+		Gaming Table 1-13
+
+		
