@@ -1,0 +1,45 @@
+/**@fun assignEditUrls()
+ *	^	This will create the response URLs for the events, and insert them into 
+ *		the the spreadsheet.
+ *
+ *	@auth	AD:AM | 2013/05/22
+ *	@mod	NoremacSkich | 2014/09/10
+ *
+ *	@src http://goo.gl/yA6sb1 | 2014/09/09
+ *
+ */
+function assignEditUrls() {
+	// This is the form ID that was used to create the response spreadsheet
+	var formID = "1RmE3BTckhmP4wXfBu_eWVRVHE2Ggk1u84Sx4fWI0HJk";
+	
+	// This is the spreadsheet ID that was used to store the responses for the spreadsheet
+	var spread = '1yb_-_8c5uc3OVBFfftcszQsE6h37iCu2OCtrq0xgVK4';
+	
+	// This is the column that is to be used to store the edit urls
+	var urlCol = 16; // column number where URL's should be populated; A = 1, B = 2 etc
+	
+	// This is the form ID
+	var form = FormApp.openById(formID);
+    
+	// If you are running script in the spreadsheet, use this:
+	//var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Form Responses');
+	
+	// If you are running script independent of spreadsheet
+	var sheet = SpreadsheetApp.openById(spread).getSheetByName('Form Responses 1');
+	
+    //Change the sheet name as appropriate
+	var data = sheet.getDataRange().getValues();
+	
+	var responses = form.getResponses();
+	var timestamps = [], urls = [], resultUrls = [];
+	
+	for (var i = 0; i < responses.length; i++) {
+		timestamps.push(responses[i].getTimestamp().setMilliseconds(0));
+		urls.push(responses[i].getEditResponseUrl());
+	}
+	
+	for (var j = 1; j < data.length; j++) {
+		resultUrls.push([data[j][0]?urls[timestamps.indexOf(data[j][0].setMilliseconds(0))]:'']);
+	}
+	sheet.getRange(2, urlCol, resultUrls.length).setValues(resultUrls);  
+}
