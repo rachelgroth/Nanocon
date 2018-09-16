@@ -1,0 +1,13 @@
+Need to make sure to run schedToSignupSheets.php, output the output into signupOutput.csv
+	cmd.exe 
+		php schedToSingupSheets.php > signupOutput.csv
+
+Need to make sure to import/update the events into SignupSheet.pub
+	Click yes to import data
+
+Open up mailmerge wizard, go to step three
+	click the merge to new publication (otherwise it will want to print out each page as it's own separate file)
+
+It should open up a new window, save that as the FinalMergedSignupSheet.pub
+
+Print that out as a pdf, and save as Signup Sheets.pdf

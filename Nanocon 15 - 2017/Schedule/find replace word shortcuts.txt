@@ -1,0 +1,31 @@
+Overall
+
+	Single Spaced
+	no spacing before / after paragraph
+	Font Size 12
+	Calibri
+
+Notes :
+	Make sure that wildcard is selected in the Options area in the find replace popup in word
+	Make sure you have the Replace With field selected when you are applying styles, otherwise, you will be looking for text with the provided font styles.
+
+Title
+
+Find:
+\<b\>(*)\</b\>
+
+Replace:
+\1
+
+	With font size 14 and bold
+
+
+Author
+
+Find:
+\<i\>(*)\</i\>
+
+Replace:
+\1
+
+	With italic and paragraph spacing after of 6pt
